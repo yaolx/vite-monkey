@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   root: true,
   extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:import/recommended'],
@@ -56,7 +58,7 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {
-        alwaysTryTypes: true
+        project: path.join(__dirname, './tsconfig.json')
       }
     }
   }

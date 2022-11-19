@@ -31,7 +31,7 @@ export function createVitePlugins(viteEnv: string, isBuild: boolean) {
       userscript: {
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.google.com/']
+        match: ['https://www.google.com/', 'https://www.iqiyi.com/*', 'https://music.163.com/*']
       },
       build: {
         externalGlobals: {

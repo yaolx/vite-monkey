@@ -19,3 +19,11 @@ export function genTextAreaSetInnerHTML(html: string) {
     __html: html
   }
 }
+/**
+ * 去掉html所有标签
+ * @param str
+ * @returns
+ */
+export function clearHtmlTag(str) {
+  return str && str.replaceAll(/<[^>]+>/g, '')
+}
