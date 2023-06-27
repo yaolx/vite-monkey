@@ -4,7 +4,6 @@ import { HashRouter } from 'react-router-dom'
 import { Provider } from 'mobx-react'
 import ReactDom from 'react-dom/client'
 
-import '@/lib/pt_outchain_player'
 import Router from '@/routes'
 import globalStore from '@/store/global'
 import './index.less'

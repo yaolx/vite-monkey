@@ -4,7 +4,6 @@
 
 import eslint from '@rollup/plugin-eslint'
 import typescript from '@rollup/plugin-typescript'
-import legacy from '@vitejs/plugin-legacy'
 import reactRefresh from '@vitejs/plugin-react'
 import viteCompression from 'vite-plugin-compression'
 import monkey, { cdn } from 'vite-plugin-monkey'
@@ -24,14 +23,13 @@ export function createVitePlugins(viteEnv: string, isBuild: boolean) {
     },
     typescript(),
     reactRefresh(),
-    legacy(),
     configStyleImportPlugin(),
     monkey({
       entry: 'src/main.tsx',
       userscript: {
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.ximalaya.com/*', 'https://www.iqiyi.com/*', 'https://music.163.com/*']
+        match: ['https://*/*']
       },
       build: {
         externalGlobals: {

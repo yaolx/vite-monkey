@@ -2,17 +2,12 @@ import { lazy } from 'react'
 import { useRoutes, RouteObject } from 'react-router-dom'
 
 const Home = lazy(() => import('@/page/home'))
-const Student = lazy(() => import('@/page/student'))
-const Music = lazy(() => import('@/page/music'))
+const Music = lazy(() => import('@/page/download'))
 
 const routesConfig: RouteObject[] = [
   {
     path: '/',
     element: <Home />
-  },
-  {
-    path: '/student',
-    element: <Student />
   },
   {
     path: '/music',
