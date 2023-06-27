@@ -12,13 +12,11 @@ function Home(): JSX.Element {
     console.log(111)
   }
   const downloadMusic = () => {
-    const { yaolxPlayer } = window as Window
-    console.log('###', yaolxPlayer)
-    const $title = document.querySelector('#title') as HTMLDivElement
-    const title = clearHtmlTag($title.innerHTML)
+    const { $webPlayer } = window as Window
+    console.log('###', $webPlayer)
     GMDownload({
-      url: yaolxPlayer.src,
-      name: title,
+      url: $webPlayer?.currentTrack?.src,
+      name: $webPlayer?.currentTrack?.trackName,
       saveAs: true
     })
   }

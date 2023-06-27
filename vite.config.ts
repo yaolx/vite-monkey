@@ -6,9 +6,7 @@ import path from 'path'
 import dotenv from 'dotenv'
 import { ConfigEnv } from 'vite'
 
-import { PORT } from './config/constant'
 import { createVitePlugins } from './config/vite/plugins'
-import { createProxy } from './config/vite/proxy'
 /**
  * 环境初始化
  * @param mode

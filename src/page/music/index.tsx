@@ -1,5 +1,4 @@
 import { Button } from 'antd'
-import { observer } from 'mobx-react'
 
 import { clearHtmlTag } from '@/utils/html-utils'
 
@@ -7,7 +6,7 @@ import { GM_download as GMDownload } from 'monkey'
 
 import styles from './style/index.module.less'
 
-function Home(): JSX.Element {
+function Music(): JSX.Element {
   const cancelAd = () => {
     console.log(111)
   }
@@ -34,4 +33,4 @@ function Home(): JSX.Element {
   )
 }
 
-export default observer(Home)
+export default Music

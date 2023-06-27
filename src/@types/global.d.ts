@@ -1,5 +1,6 @@
 interface Window {
   yaolxPlayer: any
+  $webPlayer: any
 }
 
 /**

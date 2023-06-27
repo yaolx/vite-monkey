@@ -47,3 +47,5 @@ concurrently同时启动前端、后端2个服务
 4. yarn json-server
 
 开启json-server，模拟数据接口
+
+5. npm 16.14.2
